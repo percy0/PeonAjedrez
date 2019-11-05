@@ -1,6 +1,6 @@
 # Tarea PeÃ³n Ajedrez
-## Profesor: JosÃ© RamÃ³n JimÃ©nez Reyes
-## Alumno:
+## Profesor: José Ramón Jiménez Reyes
+## Alumno: Emanuel Pérez García
 
 La tarea va a consistir en modelar el movimiento de un peÃ³n de ajedrez por el tablero de dicho juego.
 <div align="center">
