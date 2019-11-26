@@ -8,6 +8,22 @@ public class Posicion {
 	private char columna;
 	
 	
+	public Posicion(int fila, char columna) {
+		setFila(fila);
+		setColumna(columna);
+	}
+	
+	
+	public Posicion(Posicion posicion) {
+		if (posicion == null) {
+			throw new NullPointerException("ERROR: No es posible copiar una posición nula.");
+
+		}
+		this.fila=posicion.fila;
+		this.columna=posicion.columna;
+	}
+	
+	
 
 	public int getFila() {
 		return fila;
@@ -44,21 +60,7 @@ public class Posicion {
 
 	}
 
-	public Posicion(int fila, char columna) {
-		super();
-		this.fila = fila;
-		this.columna = columna;
-	}
-	
-	
-	public Posicion(Posicion posicion) {
-		if (posicion == null) {
-			throw new NullPointerException("ERROR: No es posible copiar una posición nula.");
 
-		}
-		this.fila=posicion.fila;
-		this.columna=posicion.columna;
-	}
 
 	@Override
 	public int hashCode() {
